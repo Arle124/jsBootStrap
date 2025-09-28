@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Componente de Bootstrap - Carousel - 5 imagenes -->
+    <!-- navBar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/css.png" width="30" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex flex-column flex-lg-row gap-2 mt-2 mt-lg-0" role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    </div>
+    
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="img/la.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+            <h3>Los Angeles</h3>
+            <p>We had such a great time in LA!</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <img src="img/chicago.jpg" alt="Chicago" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+            <h3>Chicago</h3>
+            <p>Thank you, Chicago!</p>
+        </div> 
+        </div>
+        <div class="carousel-item">
+        <img src="img/ny.jpg" alt="New York" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+            <h3>New York</h3>
+            <p>We love the Big Apple!</p>
+        </div>  
+        </div>
+        <div class="carousel-item">
+        <img src="img/inosuke.jpg" alt="New York" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+            <h3>Inosuke</h3>
+            <p>We love the to Kimetsu!</p>
+        </div>  
+        </div>
+        <div class="carousel-item">
+        <img src="img/akasa.jpg" alt="New York" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+            <h3>Castillo infinito</h3>
+            <p>We don´t love the Demon!</p>
+        </div>  
+        </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+    </div>
+
+    <div class="container-fluid mt-3">
+    <h3>Carousel Example</h3>
+    <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+    </div>
+    <!-- fin del Carousel -->
+
+    <!-- Modal -->
+     <div class="container mt-3">
+  <h3>Responsive Fullscreen Modal Example</h3>
+  <p>The modal-fullscreen-lg-down class will display a modal that is in fullscreen below 992px.</p>
+  <p>Click the button and resize the browser window to see the effect.</p>
+
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    Open modal
+  </button>
+</div>
+
+<!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-fullscreen-lg-down">
+            <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                Modal body..
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+
+            </div>
+        </div>
+    </div>
+<br>
+    <div class="container">
+        <button type="button" class="btn btn-primary">Primary</button>
+    </div>
+    <div class="container-fluid">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos alias expedita assumenda magnam vero perferendis officiis repellendus commodi accusantium facere neque praesentium laboriosam, consequuntur enim. Maiores officiis est error fuga?
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6" style="background-color: #E8E8E8;">
+                <p><b>Colunmna 1</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugiat voluptate, dolorem cum, enim eligendi minus possimus vel odit inventore asperiores optio, expedita maxime officiis deserunt ex molestiae dolor beatae?</p>
+            </div>
+            <div class="col-sm-6" style="background-color: #E8E8E8;">
+                <p><b>Colunmna 2</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae excepturi placeat reiciendis enim ad eaque, dicta neque. Inventore, autem expedita ea nihil eos laudantium, quidem veniam laboriosam esse, ducimus molestiae.</p>
+            </div>
+        </div>        
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4" style="background-color: yellow;">
+                <img src="img/paris.jpg" class="rounded" alt="Paris">
+            </div>
+            <div class="col-sm-4" style="background-color: blue;">
+                <img src="img/newyork.jpg" class="rounded-circle" alt="newyork">
+            </div>
+            <div class="col-sm-4" style="background-color: red;">
+                <img src="img/sanfran.jpg" class="img-thumbnail" alt="sanfran">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+</body>
+</html>
